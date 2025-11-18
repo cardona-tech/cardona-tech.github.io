@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Cardona-Tech - Especialista en Ciberseguridad, Desarrollo Full Stack, Inteligencia Artificial, Automatización y experto en SEO/Marketing Digital. Portafolio profesional con proyectos de pentesting, análisis de vulnerabilidades, desarrollo de software y soluciones personalizadas.">
+    <meta name="keywords" content="cardona-tech, ciberseguridad, pentesting, desarrollo web, full stack, inteligencia artificial, IA, machine learning, automatización, SEO, marketing digital, posicionamiento web, Python, JavaScript, análisis de vulnerabilidades, ingeniería inversa">
+    <meta name="author" content="Cardona-Tech">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cardona-tech.github.io/">
+    <meta property="og:title" content="Cardona-Tech — Especialista en Ciberseguridad, Desarrollo Full Stack, IA y SEO">
+    <meta property="og:description" content="Portafolio profesional de Cardona-Tech. Experto en ciberseguridad, pentesting, desarrollo de software, inteligencia artificial, automatización y posicionamiento web (SEO). Proyectos, demos y contacto.">
+    <meta property="og:site_name" content="Cardona-Tech">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cardona-tech.github.io/">
+    <meta name="twitter:title" content="Cardona-Tech — Ciberseguridad, Desarrollo Full Stack e IA">
+    <meta name="twitter:description" content="Especialista en ciberseguridad, desarrollo de software, IA, automatización y SEO. Portafolio con proyectos profesionales.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cardona-tech.github.io/">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cardona-Tech",
+      "url": "https://cardona-tech.github.io/",
+      "sameAs": [
+        "https://github.com/cardona-tech"
+      ],
+      "jobTitle": "Especialista en Ciberseguridad, Desarrollador Full Stack y Experto en SEO",
+      "description": "Especialista en ciberseguridad (pentesting, análisis de vulnerabilidades, ingeniería inversa), desarrollador full stack (Python, JavaScript, backend/frontend), experto en inteligencia artificial (Machine Learning, Deep Learning, NLP), automatización y SEO/marketing digital para posicionamiento web. Creador de soluciones tecnológicas personalizadas en C.D.E.T.P.",
+      "knowsAbout": [
+        "Ciberseguridad",
+        "Pentesting",
+        "Análisis de Vulnerabilidades",
+        "Ingeniería Inversa",
+        "Desarrollo Full Stack",
+        "Python",
+        "JavaScript",
+        "Backend Development",
+        "Frontend Development",
+        "Inteligencia Artificial",
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "Automatización",
+        "SEO",
+        "Marketing Digital",
+        "Posicionamiento Web"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Especialista en Ciberseguridad y Desarrollo de Software",
+        "skills": "Pentesting, Análisis Forense Digital, Desarrollo Full Stack, Inteligencia Artificial, Automatización, SEO y Marketing Digital"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "C.D.E.T.P."
+      }
+    }
+    </script>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    
+    <title>Cardona-Tech | Ciberseguridad, Desarrollo Full Stack, IA y SEO — CV Profesional</title>
+    
+    <!-- Main Stylesheet - Inline Critical CSS -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}:root{--bg-primary:#0a1128;--bg-secondary:#0d1b2a;--bg-card:#1b263b;--accent-primary:#00d9ff;--accent-secondary:#00b4d8;--text-primary:#e0e1dd;--text-secondary:#c0c7d3;--border-bright:#00d9ff}html,body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden;scroll-behavior:smooth;max-width:100%;width:100%}
+        .sidebar{position:fixed;top:0;left:-300px;width:300px;height:100%;background:var(--bg-card);border-right:2px solid var(--border-bright);transition:left .3s ease;z-index:1000;display:flex;flex-direction:column}.sidebar.active{left:0}
+        .sidebar-header{padding:20px;border-bottom:2px solid var(--border-bright);display:flex;justify-content:space-between;align-items:center}.sidebar-header h2{color:var(--accent-primary);font-size:1.2rem;margin:0}
+        .close-btn{background:none;border:none;color:var(--accent-primary);font-size:2rem;cursor:pointer;padding:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;transition:transform .3s ease}.close-btn:hover{transform:rotate(90deg)}
+        .nav-menu{list-style:none;padding:20px 0;flex:1}.nav-menu li{margin:0}.nav-menu a{display:block;padding:15px 20px;color:var(--text-primary);text-decoration:none;border-left:3px solid transparent;transition:all .3s ease}.nav-menu a:hover{background:rgba(0,217,255,.1);border-left-color:var(--accent-primary);color:var(--accent-primary)}
+        .sidebar-footer{padding:20px;border-top:2px solid var(--border-bright);display:flex;gap:15px;justify-content:center}.social-link{color:var(--accent-primary);transition:transform .3s ease;display:inline-flex}.social-link:hover{transform:scale(1.2)}
+        .top-header{position:fixed;top:0;left:0;right:0;height:60px;background:var(--bg-card);border-bottom:2px solid var(--border-bright);display:flex;align-items:center;justify-content:space-between;padding:0 20px;z-index:999}
+        .header-logo{color:var(--accent-primary);font-weight:700;font-size:1.2rem}.header-actions a{color:var(--accent-primary);transition:transform .3s ease;display:inline-flex}.header-actions a:hover{transform:scale(1.2)}
+        .menu-btn{background:none;border:none;cursor:pointer;padding:5px;display:flex;flex-direction:column;gap:5px}.menu-btn span{width:25px;height:3px;background:var(--accent-primary);display:block;transition:all .3s ease}.menu-btn:hover span{background:var(--accent-secondary)}
+        .stars{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;background:transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><circle cx="10" cy="10" r="1" fill="%2300d9ff" opacity="0.3"/><circle cx="50" cy="30" r="1" fill="%2300d9ff" opacity="0.4"/><circle cx="80" cy="60" r="1" fill="%2300d9ff" opacity="0.3"/><circle cx="30" cy="80" r="1" fill="%2300d9ff" opacity="0.5"/><circle cx="90" cy="20" r="1" fill="%2300d9ff" opacity="0.3"/></svg>') repeat;opacity:.3;animation:animStar 100s linear infinite}@keyframes animStar{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+        .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding-top:80px;padding-bottom:40px;background:linear-gradient(180deg,var(--bg-primary) 0%,var(--bg-secondary) 100%);position:relative}.hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 50% 50%,rgba(0,217,255,.1) 0%,transparent 50%);pointer-events:none}
+        .hero-content{text-align:center;padding:40px 0;position:relative;z-index:1}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:1;width:100%;box-sizing:border-box}
+        .hero-title{font-size:clamp(2.5rem,8vw,5rem);font-weight:700;text-transform:uppercase;color:var(--accent-primary);letter-spacing:.1em;margin-bottom:20px}
+        .hero-subtitle{font-size:clamp(1rem,2.5vw,1.5rem);color:var(--text-secondary);margin-bottom:40px;font-weight:300}
+        .hero-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+        .btn-primary,.btn-secondary{display:inline-block;padding:15px 30px;text-decoration:none;border-radius:8px;font-weight:500;transition:all .3s ease;border:2px solid var(--border-bright)}
+        .btn-primary{background:linear-gradient(135deg,#0096c7 0%,#00d9ff 100%);color:var(--bg-primary)}.btn-secondary{background:transparent;color:var(--accent-primary)}.btn-primary:hover,.btn-secondary:hover{transform:translateY(-3px)}
+        .section{padding:100px 0;position:relative;overflow-x:hidden}.section-title{font-size:clamp(1.5rem,5vw,3rem);text-align:center;margin:0 auto 60px;color:var(--accent-primary);position:relative;display:block;width:auto;max-width:calc(100% - 20px);padding:0 10px;box-sizing:border-box}.section-title::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:80%;max-width:300px;height:3px;background:linear-gradient(135deg,#0096c7 0%,#00d9ff 100%);box-shadow:0 0 10px var(--accent-primary)}
+        .about{background:var(--bg-secondary)}.about-text p{font-size:1.1rem;color:var(--text-secondary);margin-bottom:20px;text-align:center}
+        .service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:30px;margin-top:40px;width:100%;box-sizing:border-box}
+        .service-card{background:var(--bg-card);padding:30px;border-radius:12px;border:2px solid var(--border-bright);box-shadow:0 0 20px rgba(0,217,255,.2);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;position:relative;overflow:hidden;will-change:transform}
+        .service-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(0,217,255,.1) 0%,transparent 70%);opacity:0;transition:opacity .3s ease}.service-card:hover::before{opacity:1}
+        .service-card:hover{transform:translate3d(0,-10px,0);box-shadow:0 0 40px rgba(0,217,255,.5);border-color:var(--accent-primary)}
+        .service-icon{font-size:3rem;margin-bottom:15px;text-align:center;color:var(--accent-primary);transition:transform .3s ease}.service-card:hover .service-icon{transform:scale(1.1)}
+        .service-card h3{color:var(--accent-primary);font-size:1.5rem;margin-bottom:15px;text-align:center}.service-card p{color:var(--text-secondary);line-height:1.6}
+        @media(max-width:768px){html,body{overflow-x:hidden;max-width:100vw;width:100vw}.container{padding:0 15px;max-width:100%;width:100%}.section{padding:60px 0;overflow-x:hidden}.section-title{font-size:1.5rem;margin:0 auto 40px;white-space:normal;word-wrap:break-word;max-width:calc(100% - 30px);padding:0 15px;text-align:center}.hero{min-height:calc(100vh - 60px);padding-top:80px;padding-bottom:60px;overflow-x:hidden}.hero-content{padding:20px 10px}.hero-title{font-size:2.2rem;margin-bottom:15px}.hero-subtitle{font-size:1rem;margin-bottom:30px}.hero-links{flex-direction:column;align-items:center;gap:15px;width:100%}.btn-primary,.btn-secondary{width:100%;max-width:280px;text-align:center;padding:12px 25px}.service-grid{grid-template-columns:1fr;gap:20px;width:100%}.service-card{padding:20px;max-width:100%}.service-card h3{font-size:1.2rem;word-wrap:break-word}.service-card p{font-size:0.9rem}}
+    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/css/styles.css"></noscript>
+</head>
+<body>
+    <!-- Navegación Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>CARDONA-TECH</h2>
+            <button class="close-btn" id="closeSidebar" aria-label="Cerrar menú">&times;</button>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#focus">Enfoque</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <a href="https://github.com/cardona-tech" target="_blank" rel="noopener" class="social-link" aria-label="Visitar perfil de GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="mailto:crxzcardona@gmail.com" class="social-link" aria-label="Enviar correo electrónico">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- Top Header -->
+    <header class="top-header">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="header-logo">CARDONA-TECH</div>
+        <div class="header-actions">
+            <a href="https://github.com/cardona-tech" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    
+    <div class="stars"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">CARDONA-TECH</h1>
+                <p class="hero-subtitle">Especialista en Ciberseguridad | Desarrollo Full Stack | IA & Automatización | SEO & Marketing Digital</p>
+                <div class="hero-links">
+                    <a href="#projects" class="btn-primary">Ver Proyectos</a>
+                    <a href="#contact" class="btn-secondary">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="section about" id="about">
+            <div class="container">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Soy un <strong>especialista en ciberseguridad</strong>, <strong>desarrollador full stack</strong>, <strong>experto en Inteligencia Artificial (IA)</strong>, <strong>SEO y Marketing Digital</strong>, creador de <strong>soluciones tecnológicas personalizadas</strong>.</p>
+                        <p>En mi empresa, <strong>C.D.E.T.P.</strong>, me enfoco en ofrecer servicios integrales que incluyen:</p>
+                        <div class="service-grid">
+                            <div class="service-card" data-scroll-animate>
+                                <div class="service-icon">
+                                    <i class="fas fa-shield-halved"></i>
+                                </div>
+                                <h3>Ciberseguridad</h3>
+                                <p>Pentesting, prevención de vulnerabilidades, análisis forense, ingeniería inversa y desarrollo de herramientas personalizadas.</p>
+                            </div>
+                            <div class="service-card" data-scroll-animate>
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>Desarrollo de Software</h3>
+                                <p>Backend, frontend, aplicaciones móviles, APIs y herramientas de automatización.</p>
+                            </div>
+                            <div class="service-card" data-scroll-animate>
+                                <div class="service-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3>Inteligencia Artificial</h3>
+                                <p>Machine Learning, Deep Learning, procesamiento de lenguaje natural (NLP), visión por computadora y más.</p>
+                            </div>
+                            <div class="service-card" data-scroll-animate>
+                                <div class="service-icon">
+                                    <i class="fas fa-gears"></i>
+                                </div>
+                                <h3>Automatización</h3>
+                                <p>Creación de scripts y herramientas para optimizar procesos empresariales y técnicos.</p>
+                            </div>
+                            <div class="service-card" data-scroll-animate>
+                                <div class="service-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>SEO & Marketing Digital</h3>
+                                <p>Posicionamiento web, optimización SEO, estrategias de marketing digital y análisis de métricas para maximizar la visibilidad online.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Tecnologías y Habilidades</h2>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Lenguajes de Programación</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">R</span>
+                        <span class="tag">Go</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Ruby</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks y Bibliotecas</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Vue.js</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express.js</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Keras</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">YOLO</span>
+                        <span class="tag">Transformers</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Bases de Datos</h3>
+                    <div class="skill-tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Elasticsearch</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">Cassandra</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Herramientas de Ciberseguridad</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Metasploit</span>
+                        <span class="tag">Nmap</span>
+                        <span class="tag">Burp Suite</span>
+                        <span class="tag">Wireshark</span>
+                        <span class="tag">Nessus</span>
+                        <span class="tag">OWASP ZAP</span>
+                        <span class="tag">SQLMap</span>
+                        <span class="tag">Ghidra</span>
+                        <span class="tag">IDA Pro</span>
+                        <span class="tag">Aircrack-ng</span>
+                        <span class="tag">Maltego</span>
+                        <span class="tag">Shodan</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">DevOps y Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Ansible</span>
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Google Cloud</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Hardware y IoT</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HackRF</span>
+                        <span class="tag">Flipper Zero</span>
+                        <span class="tag">Raspberry Pi</span>
+                        <span class="tag">Arduino</span>
+                        <span class="tag">ESP32</span>
+                        <span class="tag">BeagleBone</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-scroll-animate>
+                        <div class="project-header">
+                            <h3>DP-Neuronal-Example</h3>
+                            <div class="project-stats">
+                                <span class="stat"><i class="fas fa-star"></i> 2</span>
+                                <span class="lang python">Python</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Una red neuronal básica en PyTorch. Entrena, guarda y usa tu modelo para hacer predicciones precisas. Perfecto para aprender y experimentar con Deep Learning.</p>
+                        <a href="https://github.com/cardona-tech/DP-Neuronal-Example" target="_blank" class="project-link">Ver en GitHub →</a>
+                    </div>
+                    
+                    <div class="project-card" data-scroll-animate>
+                        <div class="project-header">
+                            <h3>Herramientas de Ciberseguridad</h3>
+                            <div class="project-stats">
+                                <span class="lang bash">Scripts</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Desarrollo de scripts personalizados en Python y Bash para pentesting, análisis de redes y detección de vulnerabilidades.</p>
+                    </div>
+
+                    <div class="project-card" data-scroll-animate>
+                        <div class="project-header">
+                            <h3>Soluciones de IA</h3>
+                            <div class="project-stats">
+                                <span class="lang ai">AI/ML</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Implementación de soluciones de IA para análisis de datos, generación de contenido, visión por computadora y procesamiento de lenguaje natural (NLP).</p>
+                    </div>
+
+                    <div class="project-card" data-scroll-animate>
+                        <div class="project-header">
+                            <h3>Automatización de Procesos</h3>
+                            <div class="project-stats">
+                                <span class="lang automation">Automation</span>
+                            </div>
+                        </div>
+                        <p class="project-description">Desarrollo de scripts en Python, Bash y PowerShell para optimizar tareas repetitivas y mejorar la eficiencia operacional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section focus" id="focus">
+            <div class="container">
+                <h2 class="section-title">Enfoque Actual</h2>
+                <div class="focus-grid">
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Herramientas de Ciberseguridad</h3>
+                        <p>Creación de scripts y herramientas personalizadas en Python para pruebas de penetración y análisis de vulnerabilidades.</p>
+                    </div>
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-rotate"></i>
+                        </div>
+                        <h3>Automatización de Procesos</h3>
+                        <p>Desarrollo de scripts en Bash, Python y PowerShell para optimizar tareas repetitivas.</p>
+                    </div>
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Exploración de IA</h3>
+                        <p>Implementación de soluciones de IA para análisis de datos, generación de contenido, visión por computadora y NLP.</p>
+                    </div>
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Hardware Hacking</h3>
+                        <p>Experimentación con dispositivos como HackRF y Flipper Zero para pruebas de seguridad.</p>
+                    </div>
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>Desarrollo de Aplicaciones</h3>
+                        <p>Creación de aplicaciones web y móviles con tecnologías modernas como React, Node.js y Flutter.</p>
+                    </div>
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Modelos de Machine Learning</h3>
+                        <p>Entrenamiento e implementación de modelos de ML y DL para aplicaciones en tiempo real.</p>
+                    </div>
+                    <div class="focus-card" data-scroll-animate>
+                        <div class="focus-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>SEO & Posicionamiento Web</h3>
+                        <p>Estrategias avanzadas de SEO, optimización técnica, link building y marketing de contenidos para posicionar proyectos web en los primeros resultados de búsqueda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <p class="contact-text">¿Interesado en colaborar o necesitas una solución personalizada? ¡No dudes en contactarme!</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/cardona-tech" target="_blank" class="contact-btn github">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:crxzcardona@gmail.com" class="contact-btn email">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>crxzcardona@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cardona-Tech. Todos los derechos reservados.</p>
+            <div class="footer-tags">
+                <span>#Cybersecurity</span>
+                <span>#SoftwareDevelopment</span>
+                <span>#Python</span>
+                <span>#AI</span>
+                <span>#MachineLearning</span>
+                <span>#DeepLearning</span>
+                <span>#NLP</span>
+                <span>#ComputerVision</span>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Font Awesome Icons - Load at end -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</body>
+</html>
