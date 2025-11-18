@@ -1,8 +1,10 @@
 # 🚀 Cardona-Tech | Portfolio Profesional
 
-[![PageSpeed](https://img.shields.io/badge/PageSpeed-100%2F100-success?style=flat-square&logo=google)](https://pagespeed.web.dev/)
+[![PageSpeed](https://img.shields.io/badge/PageSpeed-100%2F100-success?style=flat-square&logo=google)](https://pagespeed.web.dev/analysis/https-cardona-tech-github-io/q06x2w2z1k?form_factor=mobile)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=flat-square)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)](https://cardona-tech.github.io/)
+
+> 🏆 **100/100 en todas las métricas de PageSpeed Insights** - [Ver análisis completo](https://pagespeed.web.dev/analysis/https-cardona-tech-github-io/q06x2w2z1k?form_factor=mobile)
 
 ## 🌐 Sitio Web
 
